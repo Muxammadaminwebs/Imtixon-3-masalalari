@@ -60,3 +60,11 @@
 //     for (let key in e) { arr.push(e[key]) }});
 // console.log(arr);
 
+// misol-5===========
+let arr = ['name', 'John', 'age', 27, 'isMArried', false, 'hobby', ['sleep', 'dancing']];
+let bb={};
+for(let i=0; i<arr.length; i+=2){
+    console.log(i);
+    bb[`${arr[i]}`] = arr[i + 1];
+}
+console.log(bb);
